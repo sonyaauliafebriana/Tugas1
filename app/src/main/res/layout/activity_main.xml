@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAD5ED"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="^Cake Shope Sonya^"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textColor="#0A196E"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etinputitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:background="#E7C6ED"
+        android:hint="Nama Pembeli : "
+        android:minHeight="48dp"
+        android:textColor="#370440"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#BEC5ED"
+        android:layout_marginTop="10dp">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="132dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/clairmont" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clairmont"
+                android:textColor="#BC991B"
+                android:textSize="12dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/redvelvet" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Red Velvet"
+                android:textColor="#BC991B"
+                android:textSize="12dp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="131dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rainbow" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Rainbow"
+                android:textColor="#BC991B"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupCake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        tools:ignore="DuplicateIds">
+
+        <RadioButton
+            android:id="@+id/rbClairmont"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:text="Clairmont"
+            android:textColor="#0A196E" />
+
+        <RadioButton
+            android:id="@+id/rbRedvelvet"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="Red velvet"
+            android:textColor="#0A196E" />
+
+        <RadioButton
+            android:id="@+id/rbRainbow"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="Rainbow"
+            android:textColor="#0A196E" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/rbSilver"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Silver"
+            android:textColor="#0A196E" />
+
+        <RadioButton
+            android:id="@+id/rbGold"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:text="Gold"
+            android:textColor="#0A196E" />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etbrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:background="#EEC7F4"
+        android:hint="Jumlah Barang : "
+        android:minHeight="48dp"
+        android:textColor="#370440"
+        android:textSize="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/btnProses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proses"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tvNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
+
